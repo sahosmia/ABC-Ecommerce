@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-neutral-bg;
+}
+.button {
+    @apply bg-primary min-w-40 px-6 py-3 rounded text-neutral-bg text-sm font-medium;
+}
+.button-full {
+    @apply bg-primary w-full px-6 py-3 rounded text-neutral-bg text-sm font-medium;
+}
+.button-small {
+    @apply bg-primary shadow-sm  px-3 py-3 rounded-lg text-utility-light_background text-xs font-medium;
+}
+
+.primary-heading {
+    @apply text-xl font-bold text-primary;
+}
+.primary-heading-dark {
+    @apply text-2xl font-bold text-utility-title;
+}
+.sub-heading {
+    @apply text-xl font-medium;
+}
+.section-heading {
+    @apply font-semibold;
+}
+.text {
+    @apply text-sm;
+}
+
+.center {
+    @apply flex justify-center items-center;
+}
+
+.error {
+    @apply text-red-500;
+}
+
+.card-box {
+    @apply rounded-lg border p-2 bg-utility-white_background shadow-sm;
+}
+
+.input {
+    @apply rounded p-2 mb-2;
+}
+
+.label {
+    @apply mb-1 text-neutral-bg;
+}
