@@ -13,6 +13,7 @@
 </head>
 
 <body class="">
+    <x-loading />
     {{ $slot }}
 
     <x-navbar />

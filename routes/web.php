@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('/first-view', 'first-view');
 Route::view('/login', 'login');
 Route::view('/', 'home');
 Route::view('/products', 'products');

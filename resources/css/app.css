@@ -6,13 +6,13 @@ body {
     @apply bg-neutral-bg;
 }
 .button {
-    @apply bg-primary min-w-40 px-6 py-3 rounded text-neutral-bg text-sm font-medium;
+    @apply px-6 py-3 text-sm font-medium rounded bg-primary min-w-40 text-neutral-bg;
 }
 .button-full {
-    @apply bg-primary w-full px-6 py-3 rounded text-neutral-bg text-sm font-medium;
+    @apply w-full px-6 py-3 text-sm font-medium rounded bg-primary text-neutral-bg;
 }
 .button-small {
-    @apply bg-primary shadow-sm  px-3 py-3 rounded-lg text-utility-light_background text-xs font-medium;
+    @apply px-3 md:px-4 py-3 text-xs md:text-sm font-medium rounded-lg shadow-sm bg-primary text-utility-light_background;
 }
 
 .primary-heading {
@@ -25,14 +25,14 @@ body {
     @apply text-xl font-medium;
 }
 .section-heading {
-    @apply font-semibold;
+    @apply font-semibold md:text-lg;
 }
 .text {
     @apply text-sm;
 }
 
 .center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
 }
 
 .error {
@@ -40,13 +40,29 @@ body {
 }
 
 .card-box {
-    @apply rounded-lg border p-2 bg-utility-white_background shadow-sm;
+    @apply p-2 border rounded-lg shadow-sm bg-utility-white_background;
 }
 
 .input {
-    @apply rounded p-2 mb-2;
+    @apply p-2 mb-2 rounded;
 }
 
 .label {
     @apply mb-1 text-neutral-bg;
+}
+
+/* Loading */
+
+#brand-logo {
+    animation: zoomInOut 2s infinite ease-in-out;
+}
+
+@keyframes zoomInOut {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
